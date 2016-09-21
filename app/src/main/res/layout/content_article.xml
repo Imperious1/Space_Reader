@@ -4,15 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:scrollbars="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="net.imperium.imperious.space.activities.ArticleActivity"
     tools:showIn="@layout/activity_article">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:id="@+id/temp_id"
-        android:text="hi" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/article_title_final"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="NASA's CORAL Mission Turns Its Eyes to Australia's Great Barrier Reef"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/article_date_final"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/article_title_final"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="16dp"
+            android:text="September 20, 2016 | Article" />
+
+        <TextView
+            android:id="@+id/article_content_final"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/article_date_final"
+            android:layout_margin="@dimen/text_margin"
+            android:text="Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga Super hot titty lover mcnoddle fuck you bitch shoot yourself allahu akbar terrorist town for life nigga "
+            android:textColor="@color/md_black_1000" />
+
+    </RelativeLayout>
 
 </android.support.v4.widget.NestedScrollView>

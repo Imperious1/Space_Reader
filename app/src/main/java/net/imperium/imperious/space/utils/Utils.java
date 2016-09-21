@@ -24,32 +24,32 @@ public class Utils {
     public static int[] colorTypes(Colors colors, Context context) {
         int[] colorArray = new int[3];
         switch (colors) {
-            case COLOR_RED:
+            case RED:
                 colorArray[0] = ContextCompat.getColor(context, R.color.md_red_300);
                 colorArray[1] = ContextCompat.getColor(context, R.color.firebrick);
                 colorArray[2] = ContextCompat.getColor(context, R.color.firebrickDark);
                 return colorArray;
-            case COLOR_BLUE:
+            case BLUE:
                 colorArray[0] = ContextCompat.getColor(context, R.color.md_blue_300);
                 colorArray[1] = ContextCompat.getColor(context, R.color.md_blue_500);
                 colorArray[2] = ContextCompat.getColor(context, R.color.md_blue_700);
                 return colorArray;
-            case COLOR_GREEN:
+            case GREEN:
                 colorArray[0] = ContextCompat.getColor(context, R.color.md_green_300);
                 colorArray[1] = ContextCompat.getColor(context, R.color.md_green_500);
                 colorArray[2] = ContextCompat.getColor(context, R.color.md_green_700);
                 return colorArray;
-            case COLOR_ORANGE:
+            case ORANGE:
                 colorArray[0] = ContextCompat.getColor(context, R.color.md_orange_300);
                 colorArray[1] = ContextCompat.getColor(context, R.color.md_orange_500);
                 colorArray[2] = ContextCompat.getColor(context, R.color.md_orange_700);
                 return colorArray;
-            case COLOR_PURPLE:
+            case PURPLE:
                 colorArray[0] = ContextCompat.getColor(context, R.color.md_purple_300);
                 colorArray[1] = ContextCompat.getColor(context, R.color.md_purple_500);
                 colorArray[2] = ContextCompat.getColor(context, R.color.md_purple_700);
                 return colorArray;
-            case COLOR_TEAL:
+            case TEAL:
                 colorArray[0] = ContextCompat.getColor(context, R.color.md_teal_300);
                 colorArray[1] = ContextCompat.getColor(context, R.color.md_teal_500);
                 colorArray[2] = ContextCompat.getColor(context, R.color.md_teal_700);

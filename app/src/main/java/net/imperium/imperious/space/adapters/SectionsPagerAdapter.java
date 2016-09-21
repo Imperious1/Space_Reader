@@ -15,15 +15,18 @@ import java.util.ArrayList;
 public class SectionsPagerAdapter extends FragmentStatePagerAdapter {
 
     private ArrayList<PlaceholderFragment> fragments = new ArrayList<>(6);
+
     public SectionsPagerAdapter(FragmentManager fm) {
         super(fm);
     }
 
     @Override
     public Fragment getItem(int position) {
-        if(fragments.size() != 6) {
+        if (fragments.size() <= 6) {
             fragments.add(PlaceholderFragment.newInstance(position + 1));
         }
+        if(position == fragments.size())
+            fragments.add(PlaceholderFragment.newInstance(position + 1));
         return fragments.get(position);
     }
 

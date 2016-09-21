@@ -82,7 +82,7 @@ public class MainActivity extends BaseActivity implements TabLayout.OnTabSelecte
         return super.onOptionsItemSelected(item);
     }
 
-    Colors colors[] = {Colors.COLOR_RED, Colors.COLOR_BLUE, Colors.COLOR_PURPLE, Colors.COLOR_GREEN, Colors.COLOR_ORANGE, Colors.COLOR_TEAL};
+    Colors colors[] = {Colors.RED, Colors.BLUE, Colors.PURPLE, Colors.GREEN, Colors.ORANGE, Colors.TEAL};
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -107,7 +107,7 @@ public class MainActivity extends BaseActivity implements TabLayout.OnTabSelecte
     public void onBtnPressed(ArticlePreviewModel article) {
         startActivity(new Intent(MainActivity.this, ArticleActivity.class)
                 .putExtra("title", article.getTitle())
-                .putExtra("imageUrl", article.getImageUrl()).putExtra("date", article.getDate()));
+                .putExtra("imageUrl", article.getImageUrl()).putExtra("date", article.getDate()).putExtra("color", mTabLayout.getSelectedTabPosition()));
     }
 
     @Override

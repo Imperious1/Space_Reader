@@ -23,6 +23,7 @@
             android:layout_width="wrap_content"
             android:layout_height="172dp"
             android:layout_centerHorizontal="true"
+            android:contentDescription="The image describing the article, content varies."
             android:scaleType="center"
             android:src="@drawable/one" />
 
@@ -75,6 +76,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/article_content"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
             android:padding="16dp"
             android:text="Read"
             android:textColor="@color/colorAccent" />
@@ -87,7 +89,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/article_content"
             android:layout_toEndOf="@+id/article_read_btn"
-            android:layout_toRightOf="@id/article_read_btn"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
             android:paddingBottom="16dp"
             android:paddingTop="16dp"
             android:text="Favorite"

@@ -1,12 +1,13 @@
 package net.imperium.imperious.space.activities;
 
 import android.os.Bundle;
-import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.TextView;
 
 import net.imperium.imperious.space.R;
@@ -16,6 +17,9 @@ public class ArticleActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        super.setTheme(chooseTheme(getIntent().getIntExtra("color", R.style.AppThemeRed)));
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_article);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -27,10 +31,10 @@ public class ArticleActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        if (getSupportActionBar() != null)
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle(null);
-        CollapsingToolbarLayout ctl = (CollapsingToolbarLayout) findViewById(R.id.toolbar_layout);
-        TextView content = (TextView) findViewById(R.id.temp_id);
+        TextView content = (TextView) findViewById(R.id.article_content_final);
         content.setText("NASA has turned one of its aerial instruments toward Australia's Great Barrier Reef, in an effort to study the destruction of this natural wonder and other coral reefs around the world. \n" +
                 "\n" +
                 "The agency's aptly titled CORAL mission (short for COral Reef Airborne Laboratory) will study four major coral-reef systems using data gathered by an instrument mounted in the belly of an airplane.\n" +
@@ -56,5 +60,24 @@ public class ArticleActivity extends AppCompatActivity {
                 "The CORAL team will continue to collect data on the Great Barrier Reef through the end of October. Later this year, the program will move to study reefs around the Hawaiian Islands; in the spring of 2017, the mission will take aerial observations of the reefs around two island archipelagos east of the Philippines: the Mariana Islands and Palau. From that comprehensive data set, scientists will be able to search for widespread trends between the state of coral reefs, and the factors (both natural and human-produced) that affect their health.\n" +
                 "\n" +
                 "Follow Calla Cofield @callacofield. Follow us @Spacedotcom, Facebook and Google+. Original article on Space.com.");
+    }
+
+    private int chooseTheme(int id) {
+        switch (id) {
+            case 0:
+                return R.style.AppThemeRed;
+            case 1:
+                return R.style.AppThemeBlue;
+            case 2:
+                return R.style.AppThemePurple;
+            case 3:
+                return R.style.AppThemeGreen;
+            case 4:
+                return R.style.AppThemeOrange;
+            case 5:
+                return R.style.AppThemeTeal;
+            default:
+                return R.style.AppThemeRed;
+        }
     }
 }

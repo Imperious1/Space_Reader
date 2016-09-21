@@ -5,10 +5,10 @@ package net.imperium.imperious.space.enums;
  */
 
 public enum Colors {
-    COLOR_RED,
-    COLOR_BLUE,
-    COLOR_GREEN,
-    COLOR_PURPLE,
-    COLOR_ORANGE,
-    COLOR_TEAL
+    RED,
+    BLUE,
+    GREEN,
+    PURPLE,
+    ORANGE,
+    TEAL
 }
