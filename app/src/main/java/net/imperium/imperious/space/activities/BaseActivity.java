@@ -16,7 +16,7 @@ public abstract class BaseActivity extends AppCompatActivity {
 
     public abstract FloatingActionButton getFab();
 
-    public abstract Toolbar getToolbar();
+    public abstract Toolbar getmToolbar();
 
     public abstract AppBarLayout getAppBarLayout();
 }

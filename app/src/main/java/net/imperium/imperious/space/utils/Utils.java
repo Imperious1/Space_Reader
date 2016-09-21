@@ -61,7 +61,7 @@ public class Utils {
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public static void animate(final BaseActivity activity, final int[] colors) {
-        int currentColorPrimary = ((ColorDrawable) activity.getToolbar().getBackground()).getColor();
+        int currentColorPrimary = ((ColorDrawable) activity.getmToolbar().getBackground()).getColor();
         int currentColorPrimaryDark = activity.getWindow().getStatusBarColor();
         int currentColorPrimaryAccent = activity.getFab().getBackgroundTintList().getDefaultColor();
         ValueAnimator colorAnimationPrimaryAccent = ValueAnimator.ofObject(new ArgbEvaluator(), currentColorPrimaryAccent, colors[0]);
@@ -73,7 +73,7 @@ public class Utils {
         colorAnimationPrimary.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animator) {
-                activity.getToolbar().setBackgroundColor((int) animator.getAnimatedValue());
+                activity.getmToolbar().setBackgroundColor((int) animator.getAnimatedValue());
                 activity.getTabLayout().setBackgroundColor((int) animator.getAnimatedValue());
                 activity.getAppBarLayout().setBackgroundColor((Integer) animator.getAnimatedValue());
             }

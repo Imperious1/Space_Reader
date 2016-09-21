@@ -6,15 +6,13 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 
 import net.imperium.imperious.space.fragments.PlaceholderFragment;
 
-import java.util.ArrayList;
-
 /**
  * Created by blaze on 9/20/2016.
  */
 
 public class SectionsPagerAdapter extends FragmentStatePagerAdapter {
 
-    private ArrayList<PlaceholderFragment> fragments = new ArrayList<>(6);
+    private PlaceholderFragment[] fragments = new PlaceholderFragment[6];
 
     public SectionsPagerAdapter(FragmentManager fm) {
         super(fm);
@@ -22,12 +20,10 @@ public class SectionsPagerAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        if (fragments.size() <= 6) {
-            fragments.add(PlaceholderFragment.newInstance(position + 1));
+        if (fragments[position] == null) {
+            fragments[position] = PlaceholderFragment.newInstance(position + 1);
         }
-        if(position == fragments.size())
-            fragments.add(PlaceholderFragment.newInstance(position + 1));
-        return fragments.get(position);
+        return fragments[position];
     }
 
     @Override
@@ -54,7 +50,7 @@ public class SectionsPagerAdapter extends FragmentStatePagerAdapter {
         return null;
     }
 
-    public ArrayList<PlaceholderFragment> getFragments() {
+    public PlaceholderFragment[] getFragments() {
         return fragments;
     }
 }

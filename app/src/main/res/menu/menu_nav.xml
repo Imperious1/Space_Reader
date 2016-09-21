@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/main">
+        <item
+            android:id="@+id/general"
+            android:checkable="true"
+            android:title="General" />
+        <item
+            android:id="@+id/popular"
+            android:checkable="true"
+            android:title="Trending" />
+    </group>
+
+    <group android:id="@+id/extra">
+        <item
+            android:id="@+id/settings"
+            android:checkable="true"
+            android:title="Settings"/>
+        <item
+            android:id="@+id/dunno"
+            android:checkable="true"
+            android:title="Dunno"/>
+        <item
+            android:id="@+id/About"
+            android:checkable="true"
+            android:title="About"/>
+    </group>
+
+</menu>

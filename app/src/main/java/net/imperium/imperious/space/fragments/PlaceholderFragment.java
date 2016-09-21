@@ -24,8 +24,6 @@ public class PlaceholderFragment extends Fragment {
         void onBtnPressed(ArticlePreviewModel article);
     }
 
-    private RecyclerView mRecycler;
-    private RecyclerArticleAdapter mAdapter;
     private OnButtonPressedListener btnListener;
 
     private static final String ARG_SECTION_NUMBER = "section_number";
@@ -51,8 +49,8 @@ public class PlaceholderFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_main, container, false);
-        mRecycler = (RecyclerView) rootView.findViewById(R.id.recycler_article);
-        mAdapter = new RecyclerArticleAdapter() {
+        RecyclerView mRecycler = (RecyclerView) rootView.findViewById(R.id.recycler_article);
+        RecyclerArticleAdapter mAdapter = new RecyclerArticleAdapter() {
             @Override
             public void onClick2(View v, int position) {
                 btnListener.onBtnPressed(new ArticlePreviewModel());
@@ -61,13 +59,5 @@ public class PlaceholderFragment extends Fragment {
         mRecycler.setAdapter(mAdapter);
         mRecycler.setLayoutManager(new LinearLayoutManager(container.getContext()));
         return rootView;
-    }
-
-    public RecyclerView getmRecycler() {
-        return mRecycler;
-    }
-
-    public RecyclerArticleAdapter getmAdapter() {
-        return mAdapter;
     }
 }
